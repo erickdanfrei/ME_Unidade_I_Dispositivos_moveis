@@ -10,13 +10,11 @@ void main() {
   int sinal = 1;
 
   for (int i = 1; i <= n; i++) {
-    // Calcula fatorial do expoente
     int fat = 1;
     for (int j = 1; j <= expoenteFatorial; j++) {
       fat = fat * j;
     }
     
-    // Calcula potência (base elevado ao fatorial) - de forma simples
     double pot = 1;
     for (int j = 1; j <= fat; j++) {
       pot = pot * base;
@@ -28,7 +26,6 @@ void main() {
     expoenteFatorial = expoenteFatorial + 4;
     divisor = divisor + 5;
     
-    // Pela imagem, o sinal alterna a partir de um ponto, aqui alternamos sempre
     if (sinal == 1) {
       sinal = -1;
     } else {
